@@ -1,0 +1,91 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body
+{
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(45deg , rgb(66, 192, 235) , rgb(231, 231, 53));
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 30px;
+    padding: 20px 10px;
+}
+
+.container .box 
+{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container .box:hover
+{
+    height: 400px;
+}
+
+.container .box .img
+{
+    height: 150px;
+    width: 200px;
+    background-color: black;
+    position: absolute;
+    top:30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+
+.container .box:hover .img
+{
+    top:-80px;
+}
+.container .box .img img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+
+.container .box .content
+{
+    position: absolute;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    top: 250px;
+    text-align: center;
+    overflow: hidden;
+    height: 30px;
+    transition: 0.5s;
+}
+
+.container .box:hover .content
+{
+    height: 250px;
+    top:150px;
+}
